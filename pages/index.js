@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <>
       Not signed in <br/>
-      <button onClick={() => signIn("cognito")}>Sign in</button>
+      <button onClick={() => signIn()}>Sign in</button>
     </>
   )
 }
