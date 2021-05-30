@@ -1,4 +1,5 @@
 import {useSession, signIn, signOut} from "next-auth/client";
+import Link from "next/link";
 
 export default function Home() {
   const [session, loading] = useSession();
@@ -12,6 +13,10 @@ export default function Home() {
      <>
        Signed in as {session.user.email} <br />
        <button onClick={() => signOut()}>Sign Out</button>
+       <br/>
+       <Link href="/setting">
+         <a>設定ページへ</a>
+       </Link>
      </>
    ) ;
   }
