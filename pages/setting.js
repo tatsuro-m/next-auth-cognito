@@ -6,6 +6,7 @@ export default function Setting() {
   return (
     <>
       <h1>ログインされています！</h1>
+      <p>設定画面</p>
     </>
   )
 }
